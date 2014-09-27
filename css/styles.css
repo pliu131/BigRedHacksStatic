@@ -10,7 +10,6 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
   padding: 0;
   font-size: 62.5%; /* sets up the base 10 */
 }
