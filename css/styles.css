@@ -2,11 +2,17 @@
 -------------------------------------------------- */
 html {
   position: relative;
+  height: 100%;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /* sets up the base 10 */
 }
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  padding: 0;
+  font-size: 62.5%; /* sets up the base 10 */
 }
 .footer {
   position: absolute;
@@ -22,9 +28,11 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-body > .container {
-  padding: 60px 15px 0;
+body > .container-fluid:first-child,
+body > .container:first-child {
+  padding-top: 50px;
 }
+
 .container .text-muted {
   margin: 20px 0;
 }
@@ -36,4 +44,49 @@ body > .container {
 
 code {
   font-size: 80%;
+}
+
+/* Styles for Elements */
+.halign_element {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+/* Beacon Submit Container Styles */
+.beacon_submit_container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* People Posts Styles */
+.people_post {
+  margin-bottom: 3rem;
+}
+
+.people_post .row {
+  border: 1px solid #333;
+}
+
+.people_post .col-xs-4 {
+  padding-left: 0;
+}
+
+.people_post h1 {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+.people_post h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.people_post h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
