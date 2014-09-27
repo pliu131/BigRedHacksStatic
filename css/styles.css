@@ -30,26 +30,23 @@ body {
 
 body > .container-fluid:first-child,
 body > .container:first-child {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
-.container .text-muted {
-  margin: 20px 0;
+.pushDown {
+  margin-top: 50px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-code {
-  font-size: 80%;
+.person_profile {  
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* Styles for Elements */
 .halign_element {
-  display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 
@@ -72,11 +69,13 @@ code {
   padding-left: 0;
 }
 
+.person_profile h1,
 .people_post h1 {
   font-size: 2.4rem;
   margin-top: 2rem;
 }
 
+.person_profile h2,
 .people_post h2 {
   font-size: 2rem;
   font-weight: 400;
@@ -84,6 +83,7 @@ code {
   margin-bottom: 1.5rem;
 }
 
+.person_profile h3,
 .people_post h3 {
   font-size: 1.6rem;
   font-weight: 300;
