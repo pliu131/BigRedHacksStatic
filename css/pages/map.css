@@ -48,8 +48,8 @@
 }
 
 .people_header h1 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .person_profile {  
@@ -86,7 +86,8 @@
 }
 
 .people_post .col-xs-4 {
-  border-left: 1px solid gray;
+  background-color: rgba(0,0,0,0.7);;
+  color: white;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
