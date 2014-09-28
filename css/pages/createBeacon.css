@@ -1,0 +1,24 @@
+.create_beacon_header {
+  background: rgba(0,0,0,0.3);
+}
+
+.create_beacon_header h1 {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.create_beacon_form_row {
+  padding-top: 3rem;
+}
+
+.create_beacon_form {}
+
+.create_beacon_form label {
+  font-size: 1.4rem;
+}
+
+.create_beacon_form .input-group {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
