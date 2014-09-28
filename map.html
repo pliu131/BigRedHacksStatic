@@ -32,7 +32,7 @@
 
   <style>
      #map-canvas {
-      height: 250px;
+      height: 350px;
     }
   </style>
 
@@ -40,13 +40,52 @@
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsIzYCDQh3YpZeOSAOcxo5hI__BwoRth0"></script>
   <script type="text/javascript">
     function initialize() {
+
+      var center = new google.maps.LatLng(42.088500, -75.968040);
+
       var mapOptions = {
-        center: { lat: 42.088500, lng: -75.968040},
-        zoom: 17
+        center: center,
+        zoom: 16
       };
-      var map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
-    }
+
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+      setMarkers(map, diningHalls);
+    };
+
+    var diningHalls = [
+      ['Marketplace', 42.088272, -75.967597],
+      ['Hinman', 42.086428, -75.972744],
+      ['C4', 42.087638, -75.962879],
+      ['Appalachian', 42.085403, -75.969777],
+      ['College in the Woods', 42.086133, -75.966839]
+    ];
+
+    function setMarkers(map, locations) {
+      for (var i = 0; i < locations.length; i++) {
+        var location = locations[i];
+        var myLatLng = new google.maps.LatLng(location[1], location[2]);
+        var contentString = '<p style="font-size: 1rem; margin-top: 0; margin-bottom: 3px;"><strong>' + location[0] + '</strong></p>'
+        + '<p class="text-right" style="font-size: 1rem; margin-top: 0; margin-bottom: 0;">+4</p>';
+        
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          title: location[0]
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        infowindow.open(map,marker);
+      };
+    };
+      
+      
+
     google.maps.event.addDomListener(window, 'load', initialize);
   </script>
 </head>
@@ -92,7 +131,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <a href="" class="text-center btn-spoon">
+        <a href="createBeacon.html" class="text-center btn-spoon">
           <i class="fa fa-fire"></i>
         </a>
       </div>
