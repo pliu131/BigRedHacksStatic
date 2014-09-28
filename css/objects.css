@@ -1,0 +1,52 @@
+.btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: rgba(128,128,128,0.7);
+  border-color: white;
+}
+
+.btn-orange {
+  background-color: #FAC564;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active {
+  background-color: white;
+  border-color: #FAC564;
+  color: #FAC564;
+}
+
+.btn-green {
+  background-color: #22DB91;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+  background-color: white;
+  border-color: #22DB91;
+  color: #22DB91;
+}
+22DB91
